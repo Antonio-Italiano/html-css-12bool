@@ -8,6 +8,7 @@
 /* Generics */
 body {
     font-family: sans-serif;
+    font-size: 12px;
 }
 
 /* Utils */
@@ -15,3 +16,26 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+.row {
+    min-height: 50px;
+    margin-bottom: 20px;
+}
+
+[ class^= 'col' ] {
+    min-height: 40px;
+    background-color: blue;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 10px;
+}
+
+[ class^= 'col' ] > * {
+    background-color: green;
+    padding: 10px 0;
+}
+
+
